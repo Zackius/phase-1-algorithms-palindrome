@@ -1,10 +1,25 @@
+function reverse(word) {
+  let wordArray = word.split("");
+  let reverseWArray = wordArray.reverse();
+  let reverseWord = reverseWArray.join("");
+
+  return reverseWord;
+}
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = reverse(word);
+  if (word === reversedWord) {
+    return "True";
+  } else {
+    return "False";
+  }
 }
 
 /* 
   Add your pseudocode here
-*/
+  //find the length of the string
+  //using for loop, loop through half of the string
+      //check if word is a paalindrome or not by checking the first half over the last half
+      //Console the output of the for loop
 
 /*
   Add written explanation of your solution here
